@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app= "Buscadematriculas">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Busca de matrículas</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+	<style type="text/css">
+		.jumbotron {
+			width: 600px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+
+		}
+		.table {
+			margin-top: 20px;
+		}
+		.form-control {
+			margin-bottom: 6px;
+		}
+
+	</style>
+	<script src="lib/angular/angular.js"></script>
+	<script>
+		angular.module("Buscadematriculas", []);
+		angular.module("Buscadematriculas").controller("BuscadematriculasCtrl", function ($scope) {
+			$scope.app = "Busca de matrículas";
+			$scope.campo = [
+				{Matricula:"", Turma:""}
+			];
+			$scope.ProcurarAluno = function () {
+				$scope.campo.push({matricula: $scope.matricula, turma: $scope.turma});
+			}
+		});
+	</script>
+</head>
+<body ng-controller="BuscadematriculasCtrl">
+	<div class="jumbotron">
+		<h2>{{app}}</h2>
+		<table class= "table">
+
+
+		</table>
+		<hr/>
+		<input class="form-control type="text" ng-model="matricula" placeholder="Matrícula" />
+		<input class="form-control type="text" ng-model="turma" placeholder="Turma" />
+		<button class="btn btn-primary btn-block" ng-click="ProcurarAluno()">Procurar Aluno</button>
+</body>
+</html>
