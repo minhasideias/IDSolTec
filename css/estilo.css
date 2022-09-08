@@ -1,0 +1,115 @@
+/*limpar formatacao padrao*/
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ body {
+
+ 	font-size: 16px;
+ 	font-family: "Courier New", Courier, monospace;
+ 	background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Universe-Wallpaper-Free-Download.jpg);
+ 	background-position: center;
+ 	background-size: auto;
+ }
+
+ #navegacao {
+ 		background: #55CAFB;
+ 		border-bottom: 1px solid #08797B;
+ 		height: 45px;
+ 		position: fixed;
+ 		width: 100%;
+ 		top: 0;
+
+ }
+
+ #area {
+ 	width: 720px;
+ 	margin: 0 auto;
+ }
+
+  #area-p {
+ 	width: 720px;
+ 	margin: 55px auto 10px auto;
+
+ }
+
+ #logo {
+ 	float: left;
+ }
+
+ #menu{
+ 	float: right;
+ 	padding: 10px 0;
+ }
+
+ #post {
+ 	background: #EAFBFB;
+ 	padding: 10px;
+ 	margin-bottom: 10px;
+
+ }
+
+ h2 {
+ 	color: #86908E;
+ }
+
+ p {
+ 	font-family: "Trebuchet MS", sans-serif;
+ }
+
+a {
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+ /****Formatação do menu*****/
+ /*links ñ visitados*/
+ a:link {
+ 	color: #0E0E0E;
+ }
+
+ /*links visitados*/
+  a:visited {
+ 	color: #0E0E0E;
+}
+ /*links hover*/
+
+ a:hover {
+ 	color: #0974FB;
+ 	background: #F6F6F8;
+ }
+
+ /*links ativos*/
+
+ a:active {
+ 	color: #A9F991;
+ }
+
+
+ .letrah1 {	
+ 	color: #E6EAE9;
+ }
+
+ .date-post {
+ 	font-size: 15px;
+ 	border-bottom: 1px solid #55CAFB;
+ 	display: block;
+ 	padding-bottom: 10px;
+ 	margin-bottom: 10px;
+ }
+
+ .img-post {
+ 	float: left;
+ 	margin: 0 10px 6px 0;
+ 	height: 200px;
+ }
+
+ .posting{
+ 	border-left: 5px solid #08797B;
+ 	padding-left: 5px;
+ 	display: block;
+ 	margin-top: 10px;
+ }
+ 
+ 
